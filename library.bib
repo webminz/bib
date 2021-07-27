@@ -11697,3 +11697,82 @@ The most frequently followed guidelines are not sufficient alone. Hence, there w
 	month = may,
 	year = {2021},
 }
+
+
+
+@inproceedings{KramerLanghammerMSB2015,
+	address = {New York, NY, USA},
+	series = {{CBSE} '15},
+	title = {Change-{Driven} {Consistency} for {Component} {Code}, {Architectural} {Models}, and {Contracts}},
+	isbn = {978-1-4503-3471-6},
+	url = {https://doi.org/10.1145/2737166.2737177},
+	doi = {10.1145/2737166.2737177},
+	abstract = {During the development of component-based software systems, it is often impractical or even impossible to include all development information into the source code. Instead, specialized languages are used to describe components and systems on different levels of abstraction or from different viewpoints: Component-based architecture models and contracts, for example, can be used to describe the system on a high level of abstraction, and to formally specify component constraints. Because models, contracts, and code contain redundant information, inconsistencies can occur if they are modified independently. Keeping this information consistent manually can require considerable effort, and can lead to costly errors, for example, when security-relevant components are verified against inconsistent contracts. In this paper, we present an approach for keeping component-based architecture models and contracts specified in the Java Modeling Language (JML) consistent with Java source code. We use change-driven incremental transformations and the {\textbackslash}vitruvius framework to automate the consistency preservation where this is possible. Using two case studies, we demonstrate how to detect and propagate changes and refactoring operations to keep models and contracts consistent with the source code.},
+	urldate = {2021-07-27},
+	booktitle = {Proceedings of the 18th {International} {ACM} {SIGSOFT} {Symposium} on {Component}-{Based} {Software} {Engineering}},
+	publisher = {Association for Computing Machinery},
+	author = {Kramer, Max E. and Langhammer, Michael and Messinger, Dominik and Seifermann, Stephan and Burger, Erik},
+	month = may,
+	year = {2015},
+	keywords = {co-evolution, formal specification, model-driven engineering},
+	pages = {21--26}
+}
+
+
+@phdthesis{Gleitze2017,
+	type = {Bachelor {Thesis}},
+	title = {A {Declarative} {Language} for {Preserving} {Consistency} of {Multiple} {Models}},
+	abstract = {This thesis proposes a new programming language, allowing to create transformations to
+keep more than two models consistent. The language uses an intermediate metamodel,
+such that any transformation is first executed from an existing model into an intermediate
+model, and then into other models.
+We start by looking at different possibilities of how consistency of multiple models can
+be preserved using only binary transformations. Subsequently, we show advantages of
+introducing an intermediate metamodel to the consistency preservation process. To support
+consistency preservation with intermediate metamodels, we subsequently introduce
+the Commonalities Language. It is allows developers to declare metaclasses of the intermediate
+metamodel together with their attributes and references. The mappings from the
+intermediate model to other models and back are given directly at the mapped intermediate
+metaclasses, attributes, and references. To avoid duplication of logic, bidirectional
+expressions can be used for the mappings. Overall, the language aims to be declarative
+and make it easy for developers to understand and verify the transformations. We have
+developed a prototypical implementation of the it for the Vitruvius framework, which can
+be used Eclipse for EMF models. The implementation serves as a proof of concept, but is
+not yet sufficiently mature to be used in practice.
+The idea of using intermediate metamodels to achieve scalable and modular consistency
+preservation for multiple models was already applied successfully to realistic scenarios
+in other works. To the best of our knowledge, no existing approach allows defning
+an intermediate metamodel together with the transformations for it in the same language.},
+	school = {Karlsruhe Institue of Technology},
+	author = {Gleitze, Joshua},
+	year = {2017}
+}
+
+@article{StuenkelKoenigLR2021TODO,
+	title = {A formal foundation for Multi-Model Consistency Management},
+	doi = {10.1007/s00165-021-00555-2}
+	language = {en},
+	journal = {Formal Aspects of Computing (to appear)},
+	author = {Stünkel, Patrick and König, Harald and Lamo, Yngve and Rutle, Adrian},
+	year = {2021},
+}
+
+
+
+@article{StuenkelKoenig2021TODO,
+	title = {Single pushout rewriting in comprehensive systems of graph-like structures},
+	copyright = {All rights reserved},
+	issn = {0304-3975},
+	url = {https://www.sciencedirect.com/science/article/pii/S0304397521004059},
+	doi = {10.1016/j.tcs.2021.07.002},
+	abstract = {The elegance of the single-pushout (SPO) approach to graph transformations arises from substituting total morphisms by partial ones in the underlying category. SPO's applicability depends on the durability of pushouts after this transition. There is a wide range of work on the question when pushouts exist in categories with partial morphisms starting with the pioneering work of Löwe and Kennaway and ending with an essential characterisation in terms of an exactness property (for the interplay between pullbacks and pushouts) and an adjointness condition (w.r.t. inverse image functions) by Hayman and Heindel. Triple graphs and graph diagrams are frameworks to synchronise two or more updatable data sources by means of internal mappings, which identify common sub-structures. Comprehensive systems generalise these frameworks, treating the network of data sources and their structural inter-relations as a homogeneous comprehensive artefact, in which partial maps identify commonalities. Although this inherent partiality produces amplified complexity, we can show that Heindel's characterisation still yields existence of pushouts in the category of comprehensive systems and reflective partial morphisms and thus enables computing by typed SPO graph transformation.},
+	language = {en},
+	urldate = {2021-07-27},
+	journal = {Theoretical Computer Science},
+	author = {Stünkel, Patrick and König, Harald},
+	month = jul,
+	year = {2021},
+	keywords = {Category theory, Comprehensive system, Hereditary pushout, Partial morphism, Single pushout rewriting, Upper adjoint}
+}
+
+
